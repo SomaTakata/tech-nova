@@ -27,7 +27,7 @@ const MobileNav: React.FC<ProductsProps> = ({
       <div className="flex-col flex items-start">
         <VerticalText text={title} />
       </div>
-      <div className="flex flex-col w-full pl-10 pt-4 pr-1">
+      <div className="flex flex-col w-full pl-9 pt-4 pr-1">
         {displayProducts.map((product, index) => (
           <div
             key={index}
