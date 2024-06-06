@@ -53,7 +53,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggleMenu, isOpen }) => {
 
       <div
         className={`fixed top-0 left-0 w-full h-full bg-white bg-opacity-90 z-40 flex flex-col items-center justify-center gap-10  duration-75  transform ${
-          isOpen ? "scale-100 opacity-100" : "scale-75 opacity-0"
+          isOpen ? "scale-100 opacity-100" : "scale-75 opacity-0 hidden"
         } lg:hidden`}
       >
         {NAV_LINKS.map((link) => (
