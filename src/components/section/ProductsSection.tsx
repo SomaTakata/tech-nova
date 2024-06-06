@@ -33,21 +33,22 @@ const MobileNav: React.FC<ProductsProps> = ({
             key={index}
             className="p-6 border-t hover:border hover:shadow-md hover:rounded-lg"
           >
-            <p className="text-2xl font-bold pb-4">{product.title}</p>
+            <p className="text-xl font-bold pb-4">{product.title}</p>
             <p className="text-xs text-[#c0bcbc] pb-6 truncate">
               {product.description}
             </p>
             <div className="w-full flex flex-col gap-4">
-              {product.coverImage.map((image, imageIndex) => (
-                <div key={imageIndex} className="relative aspect-video">
-                  <Image
-                    src={image.src}
-                    alt={image.altText || "Cover Image"}
-                    fill
-                    className="object-contain border rounded-xl"
-                  />
-                </div>
-              ))}
+              <div
+                key={product.coverImage[0]._id}
+                className="relative aspect-video"
+              >
+                <Image
+                  src={product.coverImage[0].src}
+                  alt={product.coverImage[0].altText || "Cover Image"}
+                  fill
+                  className="object-contain border rounded-xl"
+                />
+              </div>
             </div>
           </div>
         ))}

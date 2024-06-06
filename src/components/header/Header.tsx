@@ -35,7 +35,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggleMenu, isOpen }) => {
           width={30}
           height={30}
         />
-        <h1 className="text-[18px] text-[#333333] font-black font-logo">
+        <h1 className="text-[18px] text-[#333333] font-bold sm:font-black">
           Tech Nova
         </h1>
       </Link>

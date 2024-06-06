@@ -44,7 +44,7 @@ const MobileNav: React.FC<TeamProps> = ({
     >
       <VerticalText text={title} />
       <div className="flex w-full gap-3 flex-col mt-8 pl-10 ">
-        {displayUsers.map((user) => (
+        {displayUsers.reverse().map((user) => (
           <div
             key={user._id}
             className="w-full border flex justify-between items-center bg-white shadow-xl p-2 rounded-md"
@@ -59,10 +59,10 @@ const MobileNav: React.FC<TeamProps> = ({
               />
               <div className="pl-4">
                 <div className="flex font-bold text-sm text-[#333333] items-center justify-start w-full pt-4">
-                  <p>{user.role}</p>
+                  <p className="mr-2">{user.role}</p>
                   <p>{user.graduationYear}</p>
                 </div>
-                <p className="text-base font-bold text-[#333333] pt-1 pb-3">
+                <p className="text-sm font-bold text-[#333333] pt-1 pb-3">
                   {user.fullName}
                 </p>
               </div>
