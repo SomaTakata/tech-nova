@@ -48,8 +48,12 @@ const MobileNav: React.FC<InfoProps> = ({ news, title, id, showButton }) => {
             </div>
           </div>
         ))}
+        <ViewButton
+          linkUrl="/info"
+          linkText="view more"
+          isVisible={showButton}
+        />
       </div>
-      <ViewButton linkUrl="/info" linkText="view more" isVisible={showButton} />
     </section>
   );
 };
