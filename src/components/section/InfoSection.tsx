@@ -38,9 +38,11 @@ const MobileNav: React.FC<InfoProps> = ({ news, title, id, showButton }) => {
                   width={100}
                   height={60}
                 />
-                <p className="ml-4 font-bold">{newsItem.title}</p>
+                <p className="ml-4 font-bold sm:text-base text-xs">
+                  {newsItem.title}
+                </p>
               </div>
-              <p className="text-sm font-bold w-full flex justify-end text-slate-300">
+              <p className="text-xs font-bold w-full flex justify-end text-slate-300">
                 {formatDate(newsItem.date)}
               </p>
             </div>
@@ -112,7 +114,12 @@ const InfoSection: React.FC<InfoProps> = ({
         id={id}
         showButton={showButton}
       />
-      <MobileNav news={displayNews} title={title} id={id} />
+      <MobileNav
+        news={displayNews}
+        title={title}
+        id={id}
+        showButton={showButton}
+      />
     </>
   );
 };
