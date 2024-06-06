@@ -75,7 +75,7 @@ const MobileNav: React.FC<Props> = ({ news, users, products }) => {
         image={somaImage}
         description={`私は兄からプログラミングを好きになるきっかけをもらいました。\n
 同様に、私も他の人々にそのようなきっかけを提供したいと思っています。\n
-芝浦工業大学において、プログラミングを好む人々を増やしていきたいです。`}
+芝浦工業大学において、プログラミングが好きな人を増やしたいです！`}
         representative="Soma Takata"
       />
       {/* お問い合わせ */}
