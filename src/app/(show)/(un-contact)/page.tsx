@@ -83,7 +83,7 @@ const MobileNav: React.FC<Props> = ({ news, users, products }) => {
         <div className="flex-col pt-16 pb-2 pl-4 pr-3 w-full flex items-start">
           <VerticalText text="お問い合わせ" />
         </div>
-        <div className="pr-8 pl-14 -mt-20">
+        <div className=" pl-14 -mt-[70px]">
           <Link href="/contact">
             <button className=" py-2 text-sm font-bold flex w-full justify-center border border-[#333333] rounded-lg ">
               お問い合わせへ

@@ -42,7 +42,7 @@ const MobileNav: React.FC<InfoProps> = ({ news, title, id, showButton }) => {
                   {newsItem.title}
                 </p>
               </div>
-              <p className="text-sm font-bold w-full flex justify-end text-slate-300">
+              <p className="text-xs font-bold w-full flex justify-end text-slate-300">
                 {formatDate(newsItem.date)}
               </p>
             </div>

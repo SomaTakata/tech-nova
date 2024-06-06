@@ -62,7 +62,7 @@ const MobileNav: React.FC<TeamProps> = ({
                   <p className="mr-2">{user.role}</p>
                   <p>{user.graduationYear}</p>
                 </div>
-                <p className="text-sm font-bold text-[#333333] pt-1 pb-3">
+                <p className="text-sm font-medium text-[#333333] pt-1 pb-3">
                   {user.fullName}
                 </p>
               </div>

@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             width={44}
             height={44}
           />
-          <h1 className="sm:text-[22px] text-[18px] text-white font-black font-logo">
+          <h1 className="sm:text-[22px] text-[18px] text-white font-black ">
             Tech Nova
           </h1>
         </div>
